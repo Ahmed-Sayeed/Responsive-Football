@@ -14,6 +14,7 @@
 
   header {
     background-color: #2d25a0;
+    height: 100vh;
 }
 /* ----------------------------
 top navigation area is here 
@@ -22,6 +23,7 @@ top navigation area is here
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 35px;
 }
 nav ul {
     display: flex;
@@ -51,7 +53,8 @@ nav ul li a {
 /* ----------------------
 logIn button styles are here
 ------------------------ */
-.login-btn a {
+.login-btn a,
+.banner-btn a {
     text-decoration: none;
     color: white;
     padding: 10px 30px;
@@ -64,4 +67,61 @@ logIn button styles are here
 
 .login-btn a span {
     margin-left: 10px;
+}
+/* ------------------
+Banner styles are here
+--------------------- */
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+.banner-text {
+    width: 400px;
+    margin: 50px 110px 0px 175px;
+}
+.banner-text h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.banner-btn:hover i{
+    animation: btn-icon-anime 0.4s infinite;
+}
+.banner-anime {
+    margin: 90px 25px 0px 0px;
+}
+.anime-footballer {
+    margin-right: 50px;
+}
+.anime-football {
+    width: 180px;
+    position: absolute;
+    top: 180px;
+    left: 800px;
+}
+.banner-anime:hover .anime-football{
+    animation: football-anime 3s ease alternate;
+}
+
+.anime-football img {
+    width: 100%;
+}
+/*--------------------
+ Animation Styles are here
+ ---------------------- */
+@keyframes football-anime {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(20);
+    }
+}
+@keyframes btn-icon-anime {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(20px);
+    }
 }
