@@ -241,6 +241,7 @@ form button {
     border: none;
     padding: 10px 17px;
     font-weight: 700;
+    cursor: pointer;
 }
 form p{
     color: white;
