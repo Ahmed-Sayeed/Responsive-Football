@@ -1,0 +1,67 @@
+/*--------------------
+ importing Fonts
+ --------------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+ /*-------------------
+  Common CSS Are here 
+  --------------------*/
+  * {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  header {
+    background-color: #2d25a0;
+}
+/* ----------------------------
+top navigation area is here 
+------------------------------*/
+.top-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.list-style {
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    visibility: hidden;
+    transition: 0.5s ;
+}
+nav ul li:hover
+.list-style {
+    visibility: visible;
+    width: 100%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* ----------------------
+logIn button styles are here
+------------------------ */
+.login-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: #ff3d8a;
+    transition: 0.5s ease;
+}
+.login-btn a:hover {
+    background-color: #e90d65;
+}
+
+.login-btn a span {
+    margin-left: 10px;
+}
