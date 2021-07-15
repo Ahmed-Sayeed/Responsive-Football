@@ -329,3 +329,85 @@ Footer Styles are here
     padding: 15px;
     letter-spacing: 2px;
 }
+/*--------------------------------
+ this media styles is for mobile 
+ ----------------------------------*/
+ @media only screen and (max-width: 668px) {
+     header {
+         width: 100%;
+     }
+     /* ------------------------
+     this style is for navigatoin 
+     -------------------------*/
+     nav {
+         display: none;
+     }
+     .mobile-nav-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav-icon {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+     .login-btn {
+         margin: 15px 10px;
+     }
+     .banner {
+         flex-direction: column;
+     }
+     .banner-text {
+         margin: 80px 10px;
+         width: 340px;
+     }
+     .banner-text h1 {
+         font-size: 45px;
+     }
+     /*-----------------------------
+      this style is for banner image
+      ----------------------------- */
+      .banner-anime {
+          margin: 0px;
+          max-width: 100%;
+      }
+      .anime-football {
+          width: 80px;
+          top: 515px;
+          left: 80px;
+      }
+      .anime-footballer {
+          width: 410px;
+      }
+      /* -------------------------------
+      this styles is for players section 
+      ---------------------------------*/
+      section.players {
+          grid-template-columns: repeat(1, 1fr);
+          margin: 20px 0px 20px 45px;
+      }
+      /* -----------------------------------
+      this style is for highlights section 
+      -------------------------------------*/
+      section.highlights {
+          flex-direction: column;
+      }
+      .highlights-text {
+          margin: 0 auto;
+          width: 330px;
+      }
+      .highlights-text p {
+          margin-bottom: 20px;
+      }
+      .highlights-image {
+          width: 330px;
+      }
+      .highlights-image img {
+          width: 100%;
+          margin: 20px 0px 20px 43px;
+      }
+ }
