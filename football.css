@@ -152,12 +152,21 @@ Banner styles are here
 /* -----------------------------
 player cards style are herer
 ------------------------------- */
-section.players {
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 50px 0px 10px 160px;
+    margin: 35px 0px 10px 160px;
     width: 1050px;
 }
+.players-title {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+}
+.players-title .dark-pink {
+    color: var(--btn-color)
+}
+
 .player-card {
     width: 320px;
     box-shadow: 2px 2px 25px rgba(0,0,0,0.2);
@@ -193,7 +202,6 @@ section.highlights {
     width: 450px;
     margin: 25px 0px 0px 115px;
 }
-
 .highlights-text h1 {
     font-size: 48px;
     line-height: 1.2;
@@ -369,7 +377,7 @@ Footer Styles are here
          flex-direction: column;
      }
      .banner-text {
-         margin: 80px 10px;
+         margin: 50px 10px;
          width: 340px;
      }
      .banner-text h1 {
@@ -384,7 +392,7 @@ Footer Styles are here
       }
       .anime-football {
           width: 80px;
-          top: 525px;
+          top: 460px;
           left: 85px;
       }
       .anime-footballer {
@@ -393,7 +401,10 @@ Footer Styles are here
       /* -------------------------------
       this styles is for players section 
       ---------------------------------*/
-      section.players {
+      .players-title {
+          font-size: 16px;
+      }
+        .players {
           grid-template-columns: repeat(1, 1fr);
           margin: 20px 0px 20px 45px;
       }
