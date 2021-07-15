@@ -120,11 +120,16 @@ Banner styles are here
 .anime-football {
     width: 180px;
     position: absolute;
-    top: 185px;
+    top: 200px;
     left: 800px;
 }
 .banner-anime:hover .anime-football{
     animation: football-anime 2s ease alternate;
+    animation-delay: 0.2s;
+    z-index: 1;
+}
+.banner-anime:hover .anime-footballer img{
+    animation: footabller-anime 0.5s ease;
 }
 
 .anime-football img {
@@ -171,6 +176,15 @@ section.discover {
     to {
         transform: rotate(360deg) scale(20);
     }
+}
+@keyframes footabller-anime {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(10deg);
+    }
+    
 }
 @keyframes btn-icon-anime {
     from {
