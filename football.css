@@ -18,6 +18,9 @@ header {
     background-color: #2d25a0;
     height: 100vh;
 }
+:root {
+    --btn-color: #f70e6b
+}
 /* ----------------------------
 top navigation styles area is here 
 ------------------------------*/
@@ -52,6 +55,9 @@ nav ul li a {
     text-decoration: none;
     color: white;
 }
+.nav-icon {
+    display: none;
+}
 /* ----------------------
 logIn button styles are here
 ------------------------ */
@@ -63,11 +69,11 @@ logIn button styles are here
     font-weight: bold;
     color: white;
     padding: 10px 30px;
-    background-color: #f70e6b;
+    background-color: var(--btn-color);
     transition: 0.5s ease;
 }
 .login-btn a:hover {
-    background-color: #e90d65;
+    background-color: #b9024b;
 }
 
 .login-btn a span {
@@ -332,7 +338,7 @@ Footer Styles are here
 /*--------------------------------
  this media styles is for mobile 
  ----------------------------------*/
- @media only screen and (max-width: 668px) {
+ @media only screen and (max-width: 480px) {
      header {
          width: 100%;
      }
@@ -349,6 +355,7 @@ Footer Styles are here
         width: 100%;
     }
     .nav-icon {
+    display: block;
     width: 40px;
     height: 40px;
     color: white;
@@ -377,8 +384,8 @@ Footer Styles are here
       }
       .anime-football {
           width: 80px;
-          top: 515px;
-          left: 80px;
+          top: 525px;
+          left: 85px;
       }
       .anime-footballer {
           width: 410px;
@@ -410,4 +417,51 @@ Footer Styles are here
           width: 100%;
           margin: 20px 0px 20px 43px;
       }
+      /*------------------------
+       discover section is here 
+       -------------------------*/
+       .discover-content h2 {
+           font-size: 20px;
+           margin-bottom: 55px;
+       }
+       .discover-content h1 {
+           font-size: 25px;
+           width: 400px;
+           margin-bottom: 30px;
+       }
+       /* ---------------------------
+       promo content is here 
+       ----------------------------*/
+       .promo-content {
+           flex-direction: column;
+       }
+       .team-thumbnail {
+           width: 100%;
+       }
+       .team-thumbnail img {
+           width: 100%;
+       }
+       .promo-news-content {
+           width: 100%;
+           padding: 10px;
+       }
+       .promo-news-content h1 {
+           font-size: 30px;
+       }
+       input[type="email"] {
+           padding: 8px 60px 8px 5px;
+       }
+       #promo-form button {
+           padding: 10px 4px;
+       }
+       /* -------------------
+       footer styles are here 
+       ---------------------*/
+       .footer-content {
+           width: 100%;
+           margin: 0px;
+       }
+       .footer-content img {
+           width: 80%;
+       }
  }
